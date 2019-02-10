@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Thermonitor (Beta)</string>
+    <string-array name="Static_list">
+        <item>iPhone</item>
+        <item>BlackBerry</item>
+        <item>Android</item>
+        <item>Windows</item>
+        <item>Linux</item>
+    </string-array>
+</resources>
