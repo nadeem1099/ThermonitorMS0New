@@ -33,13 +33,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.811" />
 
-    <android.support.v7.widget.Toolbar
+    <Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
+        android:layout_width="5000dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="?attr/colorPrimary"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?attr/colorError"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,18 +63,47 @@
         android:layout_marginBottom="374dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="Email:" />
+        android:text="Email:"
+        android:textStyle="italic" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="336dp"
-        android:layout_height="28dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="386dp"
         android:layout_marginEnd="46dp"
-        android:layout_marginBottom="298dp"
+        android:layout_marginBottom="300dp"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:inputType="textEmailAddress"
+        android:text="Password:"
+        android:textStyle="italic" />
 
+
+    <Button
+        android:id="@+id/noAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="64dp"
+        android:text="Don't have an account? Register now!"
+        android:textAlignment="center" />
+
+    <ProgressBar
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
 
 </RelativeLayout>
